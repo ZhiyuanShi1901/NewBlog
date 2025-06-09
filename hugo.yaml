@@ -120,10 +120,11 @@ params:
     Content: Welcome to my blog
 
   socialIcons:
+    
     - name: x
-      url: "https://x.com/"
+      url: "https://x.com/ShiZhiyuan_Seis"
     - name: stackoverflow
-      url: "https://stackoverflow.com"
+      url: "https://stackoverflow.com/users/30756950/zhiyuan-shi?tab=profile"
     - name: github
       url: "https://github.com/ZhiyuanShi1901"
 
