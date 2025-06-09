@@ -2,8 +2,8 @@
 title: "Test3"
 date: 2025-06-09T18:56:47+08:00
 slug: "test3"
-tags: ["tag"]
-categories: ["category"]
+tags: ["test413"]
+categories: ["test413"]
 author: "ShiZhiyuan"
 
 showToc: true
