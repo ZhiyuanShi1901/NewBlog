@@ -1,4 +1,4 @@
-baseURL: https://shizhiyuan.work/
+baseURL: "https://zhiyuanshi.github.io/NewBlog/"
 languageCode: zh-cn
 title: Seismology Learning Notes
 pagination:

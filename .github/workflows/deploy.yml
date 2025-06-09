@@ -1,63 +1,35 @@
-name: Deploy to Github Pages 🚀
+name: Deploy to GitHub Pages 🚀
 
 on:
-    push:
-        branches: [main]
-    pull_request:
-        branches: [main]
+  push:
+    branches: [main]  # 每次向 main 分支推送时自动部署
 
 jobs:
-    build:
-        runs-on: ubuntu-latest
+  build:
+    runs-on: ubuntu-latest
 
-        permissions:
-            # Give the default GITHUB_TOKEN write permission to commit and push the
-            # added or changed files to the repository.
-            contents: write
+    permissions:
+      contents: write  # 允许写入 gh-pages 分支
 
-        steps:
-            - name: Set Timezone 🌏️
-              uses: szenius/set-timezone@v2.0
-              with:
-                timezoneLinux: "Asia/Singapore"
-                timezoneMacos: "Asia/Singapore"
-                timezoneWindows: "Singapore Standard Time"
+    steps:
+      - name: Checkout source code 🛎️
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: true
 
-            - name: Checkout 🛎️
-              uses: actions/checkout@v4
-              with:
-                  fetch-depth: 0
-                  submodules: true
+      - name: Setup Hugo ⚙️
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: true
 
-            - name: Cache Hugo resources 🗃️
-              uses: actions/cache@v4
-              env:
-                  cache-name: cache-hugo-resources
-              with:
-                  path: resources
-                  key: ${{ env.cache-name }}
+      - name: Build site 🔧
+        run: hugo --minify
 
-            - name: Setup Go 🛠️
-              uses: actions/setup-go@v5
-              with:
-                  go-version: "^1.17.0"
-            - run: go version
-
-            - name: Setup Hugo ⚙️
-              uses: peaceiris/actions-hugo@v2
-              with:
-                  hugo-version: "latest"
-                  extended: true
-
-            - name: Build 🔧
-              run: hugo --minify --gc
-
-            - name: Deploy 🚀
-              uses: JamesIves/github-pages-deploy-action@v4
-              with:
-                  branch: main
-                  folder: public
-                  clean: true
-                  single-commit: true
-                  token: ${{ secrets.action }}
-                  repository-name: 你的用户名/你的用户名.github.io
+      - name: Deploy to GitHub Pages 🚀
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: gh-pages
