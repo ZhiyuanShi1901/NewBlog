@@ -1,35 +1,36 @@
-name: Deploy to GitHub Pages 🚀
+name: Deploy Hugo site to GitHub Pages
 
 on:
   push:
-    branches: [main]  # 每次向 main 分支推送时自动部署
+    branches:
+      - main
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
 
     permissions:
-      contents: write  # 允许写入 gh-pages 分支
+      contents: write
 
     steps:
-      - name: Checkout source code 🛎️
+      - name: Checkout source
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
           submodules: true
 
-      - name: Setup Hugo ⚙️
+      - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
           extended: true
 
-      - name: Build site 🔧
+      - name: Build site
         run: hugo --minify
 
-      - name: Deploy to GitHub Pages 🚀
+      - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-          publish_branch: main
+          publish_branch: gh-pages
