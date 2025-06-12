@@ -1,7 +1,7 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
-slug: "{{ .Name }}"
+title: "你的文章标题"
+date: 2025-06-12
+slug: "post-slug"
 tags: ["tag"]
 categories: ["category"]
 author: "ShiZhiyuan"
@@ -16,9 +16,9 @@ canonicalURL: "https://canonical.url/to/page"
 disableHLJS: false
 
 cover:
-  image: ""         # 封面图路径（可为空）
-  alt: ""           # 封面图描述
-  caption: ""       # 封面图下方文字
+  image: ""
+  alt: ""
+  caption: ""
   relative: false
   hidden: true
 
