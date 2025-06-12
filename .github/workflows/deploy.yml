@@ -10,14 +10,14 @@ jobs:
     runs-on: ubuntu-latest
 
     permissions:
-      contents: write
+      contents: write  # 允许自动提交 gh-pages 分支
 
     steps:
       - name: Checkout source
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
-          submodules: true
+          submodules: true  # 如果你用了主题
+          fetch-depth: 0     # 需要完整 git 历史以便部署
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
@@ -26,9 +26,9 @@ jobs:
           extended: true
 
       - name: Build site
-        run: hugo --minify
+        run: hugo --minify  # 构建静态网站到 ./public
 
-      - name: Deploy
+      - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
