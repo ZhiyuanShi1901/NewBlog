@@ -27,3 +27,5 @@ editPost:
   Text: "Suggest Changes"
   appendFilePath: true
 ---
+
+This is test 3.

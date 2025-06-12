@@ -2,8 +2,8 @@
 title: "Wewilltest"
 date: 2025-06-09T21:23:05+08:00
 slug: "wewilltest"
-tags: ["tag"]
-categories: ["category"]
+tags: ["dte"]
+categories: ["sgdd"]
 author: "ShiZhiyuan"
 
 showToc: true
