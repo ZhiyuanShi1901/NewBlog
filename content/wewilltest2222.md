@@ -1,6 +1,6 @@
 ---
 title: "willtest2222"
-date: 2025-06-12
+date: 2025-06-12T21:23:05+08:00
 slug: "post-slug"
 tags: ["ftr"]
 categories: ["category"]
