@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on Seismology Learning Notes</title>
+    <link>https://zhiyuanshi1901.github.io/tags/</link>
+    <description>Recent content in Tags on Seismology Learning Notes</description>
+    <generator>Hugo -- 0.147.8</generator>
+    <language>zh</language>
+    <copyright>©2022-2025 Seismology Learning Notes</copyright>
+    <lastBuildDate>Wed, 11 Jun 2025 14:23:05 +0800</lastBuildDate>
+    <atom:link href="https://zhiyuanshi1901.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ftr</title>
+      <link>https://zhiyuanshi1901.github.io/tags/ftr/</link>
+      <pubDate>Wed, 11 Jun 2025 14:23:05 +0800</pubDate>
+      <guid>https://zhiyuanshi1901.github.io/tags/ftr/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dte</title>
+      <link>https://zhiyuanshi1901.github.io/tags/dte/</link>
+      <pubDate>Mon, 09 Jun 2025 21:23:05 +0800</pubDate>
+      <guid>https://zhiyuanshi1901.github.io/tags/dte/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Test413</title>
+      <link>https://zhiyuanshi1901.github.io/tags/test413/</link>
+      <pubDate>Mon, 09 Jun 2025 18:56:47 +0800</pubDate>
+      <guid>https://zhiyuanshi1901.github.io/tags/test413/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

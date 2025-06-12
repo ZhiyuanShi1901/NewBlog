@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Category on Seismology Learning Notes</title>
+    <link>https://zhiyuanshi1901.github.io/categories/category/</link>
+    <description>Recent content in Category on Seismology Learning Notes</description>
+    <generator>Hugo -- 0.147.8</generator>
+    <language>zh</language>
+    <copyright>©2022-2025 Seismology Learning Notes</copyright>
+    <lastBuildDate>Wed, 11 Jun 2025 14:23:05 +0800</lastBuildDate>
+    <atom:link href="https://zhiyuanshi1901.github.io/categories/category/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>willtest2222</title>
+      <link>https://zhiyuanshi1901.github.io/post-slug/</link>
+      <pubDate>Wed, 11 Jun 2025 14:23:05 +0800</pubDate>
+      <guid>https://zhiyuanshi1901.github.io/post-slug/</guid>
+      <description>文章描述</description>
+      <content:encoded><![CDATA[<p>This is other test, for we willtest2222</p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

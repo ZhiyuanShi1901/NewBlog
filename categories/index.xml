@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Categories on Seismology Learning Notes</title>
+    <link>https://zhiyuanshi1901.github.io/categories/</link>
+    <description>Recent content in Categories on Seismology Learning Notes</description>
+    <generator>Hugo -- 0.147.8</generator>
+    <language>zh</language>
+    <copyright>©2022-2025 Seismology Learning Notes</copyright>
+    <lastBuildDate>Wed, 11 Jun 2025 14:23:05 +0800</lastBuildDate>
+    <atom:link href="https://zhiyuanshi1901.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Category</title>
+      <link>https://zhiyuanshi1901.github.io/categories/category/</link>
+      <pubDate>Wed, 11 Jun 2025 14:23:05 +0800</pubDate>
+      <guid>https://zhiyuanshi1901.github.io/categories/category/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sgdd</title>
+      <link>https://zhiyuanshi1901.github.io/categories/sgdd/</link>
+      <pubDate>Mon, 09 Jun 2025 21:23:05 +0800</pubDate>
+      <guid>https://zhiyuanshi1901.github.io/categories/sgdd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Test413</title>
+      <link>https://zhiyuanshi1901.github.io/categories/test413/</link>
+      <pubDate>Mon, 09 Jun 2025 18:56:47 +0800</pubDate>
+      <guid>https://zhiyuanshi1901.github.io/categories/test413/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
